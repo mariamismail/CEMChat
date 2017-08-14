@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/user_image"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@id/user_image"
+        android:layout_toEndOf="@id/user_image"
+        android:id="@+id/user_name"
+        android:textStyle="normal|bold" />
+
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_height="2px"
+        android:layout_marginStart="@dimen/tw__card_spacing_large"
+        android:layout_marginLeft="@dimen/tw__card_spacing_large"
+        android:layout_marginEnd="@dimen/tw__card_spacing_large"
+        android:layout_marginRight="@dimen/tw__card_spacing_large"
+        android:layout_below="@id/user_name"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray"/>
+
+
+</RelativeLayout>

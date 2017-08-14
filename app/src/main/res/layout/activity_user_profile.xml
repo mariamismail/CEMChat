@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.dell.cemchat.Activities.UserProfileActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background= "@color/colorBackGround"
+
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/mybar"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mytoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/topbar"
+
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+
+        android:id="@+id/profileButton" />
+
+    <TextView
+
+        android:text="Display Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_gravity="start"
+        android:textSize="16sp"
+        android:textColor="@color/darkgray"
+        android:id="@+id/textView2" />
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="@drawable/text_border"
+
+
+        android:hint="Your Name"
+        android:ems="10"
+        android:id="@+id/user_name" />
+
+    <TextView
+
+        android:text="Phone Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_gravity="start"
+        android:textSize="16sp"
+        android:textColor="@color/darkgray"
+        android:id="@+id/textView3" />
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/text_border"
+        android:layout_gravity="center"
+        android:inputType="phone"
+
+        android:ems="11"
+        android:id="@+id/phoneNum" />
+
+    <Button
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="Update"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/tw__composer_white"
+        android:layout_gravity="right"
+        android:id="@+id/save" />
+</LinearLayout>
